@@ -8,10 +8,10 @@ document.getElementById("button3").onclick = function () {
     location.href = "https://aswanth6000imagegallery.netlify.app/";
 };
 document.getElementById("button2").onclick = function () {
-    location.href = "https://aswanth6000imagegallery.netlify.app/";
+    location.href = "https://github.com/aswanth6000";
 };
 document.getElementById("button1").onclick = function () {
-    location.href = "https://aswanth6000imagegallery.netlify.app/";
+    location.href = "https://github.com/aswanth6000";
 };
 
 
