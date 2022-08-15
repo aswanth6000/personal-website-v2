@@ -337,7 +337,7 @@ html,body{
     .menu{
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 59px;
         gap: 0;
         flex-direction: column;
         background-color: #171717;
@@ -349,6 +349,26 @@ html,body{
         margin: 16px 0;
 
     }
+    .menu-btn:hover {
+        opacity: 1;
+      }
+      
+      .menu-btn::before {
+        transition: 300ms;
+        height: 3px;
+        content: "";
+        position: absolute;
+        background-color:red;
+      }
+      
+      .menu-btn::before {
+        width: 0%;
+        bottom: -7px;
+      }
+      
+      .menu-btn:hover::before {
+        width: 10%;
+      }
     .menu.active{
         left: 0;
 
