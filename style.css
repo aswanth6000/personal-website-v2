@@ -282,7 +282,7 @@ html,body{
     filter: blur(2px);
 }
 #loader{
-    background: #0d0d0d url(images/loading.gif) no-repeat center center;
+    background: #000000 url(images/loading.gif) no-repeat center center;
     height: 50vh;
     width: 100%;
     position: absolute;
@@ -462,6 +462,9 @@ html,body{
     .arrow{
         padding-top: 51px;
     }
+    #loader{
+        height: 137vh;
+    }
 }
 @media (max-width: 500px){
     .logo{
@@ -582,6 +585,10 @@ html,body{
     }
     .arrow{
         padding-top: 51px;
+    }
+    #loader{
+    height: 135vh;
+    width: 100%;
     }
 
 }

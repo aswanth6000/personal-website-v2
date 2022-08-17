@@ -26,9 +26,10 @@ document.querySelectorAll("menu-btn").forEach( n => n.addEventListener("click" ,
   hamburger.classList.remove("active")
   menu.classList.remove("active")
 }))
+
 var load = document.getElementById("loader")
 window.addEventListener("load", function (){
-  load.style.display = "none";
+load.style.display = "none";
   
 
 })
