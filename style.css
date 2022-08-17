@@ -281,6 +281,14 @@ html,body{
     -webkit-filter: blur(2px);
     filter: blur(2px);
 }
+#loader{
+    background: #0d0d0d url(images/loading.gif) no-repeat center center;
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+
+}
 /*.work-p{
     font-size: medium;
     color: #f1f1f1;
