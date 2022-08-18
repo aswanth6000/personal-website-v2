@@ -28,7 +28,7 @@ html,body{
     width: 100%;
     padding: 13px 0;
     font-family: 'Montserrat', sans-serif;
-    z-index: 5;
+    z-index: 7;
 }
 .sticky{
     padding: 15px 0;
@@ -281,21 +281,37 @@ html,body{
     -webkit-filter: blur(2px);
     filter: blur(2px);
 }
-#loader{
-    background: #000000 url(images/loading.gif) no-repeat center center;
+.load{
+    background:#000 center center;
     height: 50vh;
     width: 100%;
     position: absolute;
     z-index: 5;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-/*.work-p{
-    font-size: medium;
-    color: #f1f1f1;
-    position: absolute;
-    margin-bottom: 142px;
-    margin-left: -422px;
-}*/
+#loader{
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #ff0000;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+      }
+      
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
 .foot{
     background: black;
     height: 10vh;
@@ -462,7 +478,7 @@ html,body{
     .arrow{
         padding-top: 51px;
     }
-    #loader{
+    .load{
         height: 137vh;
     }
 }
@@ -489,7 +505,7 @@ html,body{
     .menu{
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 60px;
         gap: 0;
         flex-direction: column;
         background-color: #171717;
@@ -586,7 +602,7 @@ html,body{
     .arrow{
         padding-top: 51px;
     }
-    #loader{
+    .load{
     height: 135vh;
     width: 100%;
     }
