@@ -27,9 +27,9 @@ document.querySelectorAll("menu-btn").forEach( n => n.addEventListener("click" ,
   menu.classList.remove("active")
 }))
 
-//var load = document.getElementById("loader")
-//window.addEventListener("load", function (){
-//load.style.display = "none";
+var load = document.getElementById("loader")
+window.addEventListener("load", function (){
+load.style.display = "none";
   
 
-///)
+})
